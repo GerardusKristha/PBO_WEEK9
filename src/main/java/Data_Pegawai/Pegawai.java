@@ -8,7 +8,7 @@ package Data_Pegawai;
 public class Pegawai {
     protected int employeeID;
     protected String name;
-    protected int gaji;
+    protected int gajiPokok;
 
     public Pegawai(){
         this(210000,"-","-");    
@@ -39,16 +39,16 @@ public class Pegawai {
     public void setName (String name){
         this.name = name;
     }
-    public int getGaji() {
-        return gaji;
+    public int getGajiPokok() {
+        return gajiPokok;
     }
-    public void setGaji(int gaji) {
-        this.gaji = gaji;
+    public void setGajiPokok(int gajiPokok) {
+        this.gajiPokok = gajiPokok;
     }
     public String toString(){
         return "\n-Nama \t\t: " + name 
                 +"\n-ID \t\t: "+ employeeID
-                +"\n-Gaji\t\t: " + gaji
+                +"\n-Gaji\t\t: " + gajiPokok
                 +"\n-------------------------";
     }
 }

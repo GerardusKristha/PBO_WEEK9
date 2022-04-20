@@ -9,11 +9,12 @@ public class Sekretaris extends Pegawai{
     public Sekretaris(){
         super();
     }
+    
     public Sekretaris(int employeeID, String name, String alamat){
        super(employeeID, name, alamat);
     }
-    @Override
-    public int getGaji(){
-        return gaji;
+    
+    public int getGajiPokok(){
+        return gajiPokok;
     }
 }

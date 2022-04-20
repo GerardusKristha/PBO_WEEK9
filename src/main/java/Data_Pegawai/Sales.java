@@ -13,11 +13,16 @@ public class Sales extends Pegawai{
     public Sales (int employeeID, String name, String department){
        super(employeeID, name, department);
     }
+
+    public int getPenjualan() {
+        return penjualan;
+    }
+    
     public void setPenjualan (int jmlJual){
         this.penjualan = jmlJual*10000;
     }
-    @Override
-    public int getGaji(){
-        return gaji+penjualan;
+    
+    public int getGajiPokok(){
+        return gajiPokok+penjualan;
     }
 }

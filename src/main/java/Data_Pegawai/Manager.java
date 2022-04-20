@@ -10,14 +10,20 @@ public class Manager extends Pegawai{
     public Manager() {
         super();
     }
+    
     public Manager(int employeeID, String name, String alamat){
        super(employeeID, name, alamat);
     }
+    
+    public int getTunjangan() {
+        return tunjangan;
+    }
+    
     public void setTunjangan(int tunjangan){
         this.tunjangan = tunjangan;
     }
-    @Override
-    public int getGaji(){
-        return gaji+tunjangan;
+    
+    public int getGajiPokok(){
+        return gajiPokok+tunjangan;
     }
 }
