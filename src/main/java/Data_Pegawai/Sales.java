@@ -11,8 +11,8 @@ public class Sales extends Pegawai{
     public Sales (){
         super();
     }
-    public Sales (int employeeID, String name, String department){
-       super(employeeID, name, department);
+    public Sales (int employeeID, String name){
+       super(employeeID, name);
     }
     
     public void setJumlahBarang(int jumBarang){

@@ -11,9 +11,9 @@ public class Pegawai {
     protected int gajiPokok;
 
     public Pegawai(){
-        this(210000,"-","-");    
+        this(210000,"-");    
     }
-    public Pegawai( int employeeID,String name,String department){
+    public Pegawai( int employeeID,String name){
         if(employeeID<210000){
             this.employeeID = 210000;
         }

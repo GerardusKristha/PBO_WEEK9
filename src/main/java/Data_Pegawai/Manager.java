@@ -11,8 +11,8 @@ public class Manager extends Pegawai{
         super();
     }
     
-    public Manager(int employeeID, String name, String alamat){
-       super(employeeID, name, alamat);
+    public Manager(int employeeID, String name){
+       super(employeeID, name);
     }
     
     public int getTunjangan() {

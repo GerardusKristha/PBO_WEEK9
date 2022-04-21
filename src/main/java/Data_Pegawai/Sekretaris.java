@@ -10,8 +10,8 @@ public class Sekretaris extends Pegawai{
         super();
     }
     
-    public Sekretaris(int employeeID, String name, String alamat){
-       super(employeeID, name, alamat);
+    public Sekretaris(int employeeID, String name){
+       super(employeeID, name);
     }
     
     public int getGaji(){
