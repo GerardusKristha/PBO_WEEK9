@@ -6,7 +6,7 @@ package Data_Pegawai;
  * Program by : Gerardus Kristha_215314004
  */
 public class Sales extends Pegawai{
-    public int KOMISI_BARANG =100000;
+    public int KOMISI_BARANG =10000;
     private int jumlahBarang;
     public Sales (){
         super();
@@ -15,12 +15,16 @@ public class Sales extends Pegawai{
        super(employeeID, name);
     }
     
+        public int getJumlahBarang(){
+        return jumlahBarang;
+    }
+        
     public void setJumlahBarang(int jumBarang){
         this.jumlahBarang=jumBarang;
     }
     
     public int getKomisi(){
-      return jumlahBarang*KOMISI_BARANG;
+      return getJumlahBarang()*KOMISI_BARANG;
     }
     
     public int getGaji(){

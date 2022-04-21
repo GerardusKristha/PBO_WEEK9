@@ -17,6 +17,7 @@ public class Sekretaris extends Pegawai{
     public int getGaji(){
         return getGajiPokok();
     }
+    
      @Override
     public String toString() {
         return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
