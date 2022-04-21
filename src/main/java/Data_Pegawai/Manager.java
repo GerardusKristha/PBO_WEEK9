@@ -23,7 +23,11 @@ public class Manager extends Pegawai{
         this.tunjangan = tunjangan;
     }
     
-    public int getGajiPokok(){
-        return gajiPokok+tunjangan;
+    public int getGaji(){
+        return getGajiPokok()+tunjangan;
+    }
+     @Override
+    public String toString() {
+        return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
     }
 }

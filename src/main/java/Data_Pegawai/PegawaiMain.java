@@ -12,7 +12,7 @@ public class PegawaiMain {
         manager.setTunjangan(1500000);
         Sales sales = new Sales(210402,"Bayu","Paigan");
         sales.setGajiPokok(3000000);
-        sales.setPenjualan(100);
+        sales.setJumlahBarang(100);
         Sekretaris sekretaris = new Sekretaris(210503, "Indra", "Kalasan");
         sekretaris.setGajiPokok(3500000);
         

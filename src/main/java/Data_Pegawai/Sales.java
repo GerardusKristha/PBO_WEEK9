@@ -6,23 +6,29 @@ package Data_Pegawai;
  * Program by : Gerardus Kristha_215314004
  */
 public class Sales extends Pegawai{
-    private int penjualan;
+    public int KOMISI_BARANG =100000;
+    private int jumlahBarang;
     public Sales (){
         super();
     }
     public Sales (int employeeID, String name, String department){
        super(employeeID, name, department);
     }
+    
+    public void setJumlahBarang(int jumBarang){
+        this.jumlahBarang=jumBarang;
+    }
+    
+    public int getKomisi(){
+      return jumlahBarang*KOMISI_BARANG;
+    }
+    
+    public int getGaji(){
+        return getGajiPokok()+getKomisi();
+    }
 
-    public int getPenjualan() {
-        return penjualan;
-    }
-    
-    public void setPenjualan (int jmlJual){
-        this.penjualan = jmlJual*10000;
-    }
-    
-    public int getGajiPokok(){
-        return gajiPokok+penjualan;
+    @Override
+    public String toString() {
+        return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
     }
 }

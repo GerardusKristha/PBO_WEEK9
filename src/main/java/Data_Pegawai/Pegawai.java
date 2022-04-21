@@ -7,7 +7,7 @@ package Data_Pegawai;
  */
 public class Pegawai {
     protected int employeeID;
-    protected String name;
+    private String name;
     protected int gajiPokok;
 
     public Pegawai(){
@@ -48,7 +48,6 @@ public class Pegawai {
     public String toString(){
         return "\n-Nama \t\t: " + name 
                 +"\n-ID \t\t: "+ employeeID
-                +"\n-Gaji\t\t: " + gajiPokok
-                +"\n-------------------------";
+                +"\n-Gaji Pokok\t: " + gajiPokok;
     }
 }
