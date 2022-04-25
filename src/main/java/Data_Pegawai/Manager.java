@@ -26,8 +26,10 @@ public class Manager extends Pegawai{
     public int getGaji(){
         return getGajiPokok()+tunjangan;
     }
-     @Override
-    public String toString() {
-        return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
-    }
+
 }
+
+//     @Override
+//    public String toString() {
+//        return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
+//    }

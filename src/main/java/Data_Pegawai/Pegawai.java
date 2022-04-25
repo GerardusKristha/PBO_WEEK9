@@ -47,7 +47,6 @@ public class Pegawai {
     }
     public String toString(){
         return "\n-Nama \t\t: " + name 
-                +"\n-ID \t\t: "+ employeeID
-                +"\n-Gaji Pokok\t: " + gajiPokok;
+                +"\n-ID \t\t: "+ employeeID;
     }
 }

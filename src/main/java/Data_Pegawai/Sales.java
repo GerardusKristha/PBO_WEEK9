@@ -31,8 +31,12 @@ public class Sales extends Pegawai{
         return getGajiPokok()+getKomisi();
     }
 
-    @Override
-    public String toString() {
-        return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
-    }
 }
+
+
+
+
+//    @Override
+//    public String toString() {
+//        return super.toString()+ "\n-Gaji total\t: "+ getGaji(); 
+//    }
